@@ -4,6 +4,7 @@ class ClassComponent extends React.Component {
   constructor(props: any) {
     super(props);
     this.state = {};
+    console.log(props);
   }
 
   componentDidMount() {
