@@ -6,6 +6,10 @@ class ClassComponent extends React.Component {
     this.state = {};
   }
 
+  componentDidMount() {
+    console.log("页面加载");
+  }
+
   render() {
     return (<>ClassComponent</>);
   }
