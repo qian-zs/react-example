@@ -1,18 +1,29 @@
 import { useReducer } from 'react';
 
+type storeState = {
+  id?: number;
+  name?: string;
+}[];
+
+type storeAction =
+  | { type: 'add'; payload: { id: number; name: string; }; }
+  | { type: 'remove'; payload: { id: number; }; }
+  | { type: 'update'; payload: { id: number; }; }
+  | { type: 'clear'; };
+
 const initialState = [
   { id: 1, name: '张三' },
   { id: 2, name: '李四' },
 ];
 
-const reducer = (state, { type, payload }) => {
-  switch (type) {
+const reducer = (state: storeState, action: storeAction) => {
+  switch (action.type) {
     case "add":
-      return [...state, payload];
+      return [...state, action.payload];
     case "remove":
-      return state.filter(item => item.id !== payload.id);
+      return state.filter(item => item.id !== action.payload.id);
     case "update":
-      return state.map(item => item.id === payload.id ? { ...item, ...payload } : item);
+      return state.map(item => item.id === action.payload.id ? { ...item, ...action.payload } : item);
     case "clear":
       return [];
     default:
