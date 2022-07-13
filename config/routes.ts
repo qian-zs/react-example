@@ -69,6 +69,16 @@
         name: 'default',
         component: './FunctionComponent',
       },
+      {
+        path: '/functioncomponent/function-params',
+        name: 'function-params',
+        component: './FunctionParams',
+      },
+      {
+        path: '/functioncomponent/function-children',
+        name: 'function-children',
+        component: './FunctionChildren',
+      },
     ],
   },
   {

@@ -54,4 +54,6 @@ export default {
   'menu.function.component': 'function组件',
   'menu.function.component.default': '默认组件',
   'menu.class.component.class-params': '父子组件传值',
+  'menu.function.component.function-params': '父子组件传值',
+  'menu.function.component.function-children': '子组件之间传值',
 };
