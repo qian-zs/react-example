@@ -52,6 +52,11 @@
         name: 'default',
         component: './ClassComponent',
       },
+      {
+        path: '/classcomponent/class-params',
+        name: 'class-params',
+        component: './ClassParams',
+      },
     ],
   },
   {
