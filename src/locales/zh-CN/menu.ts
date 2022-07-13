@@ -56,4 +56,5 @@ export default {
   'menu.class.component.class-params': '父子组件传值',
   'menu.function.component.function-params': '父子组件传值',
   'menu.function.component.function-children': '子组件之间传值',
+  'menu.function.component.function-slot': 'slot',
 };

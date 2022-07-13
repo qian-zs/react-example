@@ -79,6 +79,11 @@
         name: 'function-children',
         component: './FunctionChildren',
       },
+      {
+        path: '/functioncomponent/function-slot',
+        name: 'function-slot',
+        component: './FunctionSlot',
+      },
     ],
   },
   {
