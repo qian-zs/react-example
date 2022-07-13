@@ -1,7 +1,13 @@
-const Son = ({ setCount }) => {
+import { FC } from 'react';
+
+type Props = {
+  setCount: any;
+};
+
+const Son: FC<Props> = ({ setCount }) => {
 
   const handleClick = () => {
-    setCount(count => count + 1);
+    setCount((count: number) => count + 1);
   };
 
   return (
