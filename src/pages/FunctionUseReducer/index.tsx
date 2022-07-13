@@ -1,4 +1,4 @@
-import { FC, useReducer } from 'react';
+import { useReducer } from 'react';
 
 const initialState = [
   { id: 1, name: '张三' },
@@ -10,9 +10,9 @@ const reducer = (state, { type, payload }) => {
     case "add":
       return [...state, payload];
     case "remove":
-      return state.filter((item: any) => item.id !== payload.id);
+      return state.filter(item => item.id !== payload.id);
     case "update":
-      return state.map((item: any) => item.id === payload.id ? { ...item, ...payload } : item);
+      return state.map(item => item.id === payload.id ? { ...item, ...payload } : item);
     case "clear":
       return [];
     default:
