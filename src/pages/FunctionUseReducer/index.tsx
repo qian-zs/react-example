@@ -1,9 +1,14 @@
 import { useReducer } from 'react';
 
-type storeState = {
+// type storeState = {
+//   id?: number;
+//   name?: string;
+// }[];
+
+interface storeState {
   id?: number;
   name?: string;
-}[];
+}
 
 type storeAction =
   | { type: 'add'; payload: { id: number; name: string; }; }
@@ -16,7 +21,8 @@ const initialState = [
   { id: 2, name: '李四' },
 ];
 
-const reducer = (state: storeState, action: storeAction) => {
+// FIXME:type 后面可以加[]例如：state: storeState，interface需要在定义处加[]例如：state: storeState[]
+const reducer = (state: storeState[], action: storeAction) => {
   switch (action.type) {
     case "add":
       return [...state, action.payload];
