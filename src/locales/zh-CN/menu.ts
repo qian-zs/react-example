@@ -57,4 +57,5 @@ export default {
   'menu.function.component.function-params': '父子组件传值',
   'menu.function.component.function-children': '子组件之间传值',
   'menu.function.component.function-slot': 'slot',
+  'menu.function.component.function-use-reducer': 'useReducer【类似redux】',
 };

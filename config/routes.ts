@@ -84,6 +84,11 @@
         name: 'function-slot',
         component: './FunctionSlot',
       },
+      {
+        path: '/functioncomponent/function-use-reducer',
+        name: 'function-use-reducer',
+        component: './FunctionUseReducer',
+      },
     ],
   },
   {
