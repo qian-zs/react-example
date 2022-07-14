@@ -99,6 +99,11 @@
         name: 'function-use-memo',
         component: './FunctionUseMemo',
       },
+      {
+        path: '/functioncomponent/function-use-ref',
+        name: 'function-use-ref',
+        component: './FunctionUseRef',
+      },
     ],
   },
   {
