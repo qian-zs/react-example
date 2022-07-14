@@ -58,4 +58,5 @@ export default {
   'menu.function.component.function-children': '子组件之间传值',
   'menu.function.component.function-slot': 'slot',
   'menu.function.component.function-use-reducer': 'useReducer【类似redux】',
+  'menu.function.component.function-use-callback': 'useCallback【缓存函数】',
 };

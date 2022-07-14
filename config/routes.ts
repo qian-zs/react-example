@@ -89,6 +89,11 @@
         name: 'function-use-reducer',
         component: './FunctionUseReducer',
       },
+      {
+        path: '/functioncomponent/function-use-callback',
+        name: 'function-use-callback',
+        component: './FunctionUseCallback',
+      },
     ],
   },
   {
