@@ -2,7 +2,6 @@ import { Divider } from "antd";
 import Components1 from "./components/Components1";
 import Components2 from "./components/Components2";
 import Components3 from "./components/Components3";
-import Components4 from "./components/Components4";
 
 const FunctionUseCallback = () => {
 
@@ -14,8 +13,6 @@ const FunctionUseCallback = () => {
       <Components2></Components2>
       <Divider>例子3</Divider>
       <Components3></Components3>
-      <Divider>例子4</Divider>
-      <Components4></Components4>
     </>
   );
 };

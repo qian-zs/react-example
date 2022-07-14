@@ -59,4 +59,5 @@ export default {
   'menu.function.component.function-slot': 'slot',
   'menu.function.component.function-use-reducer': 'useReducer【类似redux】',
   'menu.function.component.function-use-callback': 'useCallback【缓存函数】',
+  'menu.function.component.function-use-memo': 'useMemo【缓存值】',
 };

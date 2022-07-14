@@ -54,7 +54,7 @@ function Counter() {
   );
 }
 
-const Components4 = () => {
+const FunctionUseMemo = () => {
   const [show, setShow] = useState(true);
   const toggle = () => setShow(!show);
 
@@ -69,4 +69,4 @@ const Components4 = () => {
   );
 };
 
-export default Components4;
+export default FunctionUseMemo;

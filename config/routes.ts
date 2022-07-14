@@ -94,6 +94,11 @@
         name: 'function-use-callback',
         component: './FunctionUseCallback',
       },
+      {
+        path: '/functioncomponent/function-use-memo',
+        name: 'function-use-memo',
+        component: './FunctionUseMemo',
+      },
     ],
   },
   {
