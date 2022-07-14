@@ -4,6 +4,7 @@ import Components2 from "./components/Components2";
 import Components3 from "./components/Components3";
 import Components4 from "./components/Components4";
 import Components5 from "./components/Components5";
+import Components6 from "../FunctionUseMemo";
 
 const FunctionUseRef = () => {
   return (
@@ -18,6 +19,8 @@ const FunctionUseRef = () => {
       <Components4></Components4>
       <Divider>例子5</Divider>
       <Components5></Components5>
+      <Divider>例子6</Divider>
+      <Components6></Components6>
     </>
   );
 };

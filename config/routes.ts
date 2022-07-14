@@ -104,6 +104,16 @@
         name: 'function-use-ref',
         component: './FunctionUseRef',
       },
+      {
+        path: '/functioncomponent/function-use-imperative-handle',
+        name: 'function-use-imperative-handle',
+        component: './FunctionUseImperativeHandle',
+      },
+      {
+        path: '/functioncomponent/function-use-layout-effect',
+        name: 'function-use-layout-effect',
+        component: './FunctionUseLayoutEffect',
+      },
     ],
   },
   {

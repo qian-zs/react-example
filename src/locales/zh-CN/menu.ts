@@ -61,4 +61,6 @@ export default {
   'menu.function.component.function-use-callback': 'useCallback【缓存函数】',
   'menu.function.component.function-use-memo': 'useMemo【缓存值】',
   'menu.function.component.function-use-ref': 'useRef【访问DOM】',
+  'menu.function.component.function-use-imperative-handle': 'useImperativeHandle【使用子组件暴露的值/方法】',
+  'menu.function.component.function-use-layout-effect': 'useLayoutEffect【完成副作用操作，会阻塞浏览器绘制】',
 };
