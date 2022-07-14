@@ -10,6 +10,7 @@ const Index = () => {
   return (
     <>
       <Child ref={inputEl} />
+      {/* TODO:索引用 useReducer 替换 */}
       <button onClick={() => inputEl?.current?.setValue((val: number) => val + 1)}>
         累加子组件的value
       </button>
