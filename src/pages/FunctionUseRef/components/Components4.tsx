@@ -1,12 +1,7 @@
-import React, { forwardRef, useEffect, useImperativeHandle, useRef, useState } from "react";
-import type { InputRef } from 'antd';
+import { forwardRef, useEffect, useImperativeHandle, useRef, useState } from "react";
 
-type ChildProps = {
-  ref?: any;
-};
-
-const Index: React.FC<ChildProps> = () => {
-  const inputEl = useRef<InputRef | null>(null);
+const Index = () => {
+  const inputEl = useRef<any | null>(null);
 
   useEffect(() => {
     console.log(inputEl?.current?.someValue);
@@ -22,8 +17,8 @@ const Index: React.FC<ChildProps> = () => {
   );
 };
 
-const Child: React.FC<ChildProps> = forwardRef((props, ref) => {
-  const inputRef = useRef<InputRef | null>(null);
+const Child = forwardRef((props, ref) => {
+  const inputRef = useRef<HTMLInputElement | null>(null);
   const [value, setValue] = useState(0);
 
   useImperativeHandle(ref, () => ({

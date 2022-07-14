@@ -2,10 +2,12 @@ import { useEffect, useLayoutEffect, useRef } from "react";
 import './Components5.less';
 
 const UseEffect = () => {
-  const box = useRef();
+  const box = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    box.current.style.marginLeft = 100 + "px";
+    if (box.current) {
+      box.current.style.marginLeft = 100 + "px";
+    }
   }, []);
 
   return (
@@ -16,9 +18,11 @@ const UseEffect = () => {
 };
 
 const UseLayoutEffect = () => {
-  const box = useRef();
+  const box = useRef<HTMLDivElement | null>(null);
   useLayoutEffect(() => {
-    box.current.style.marginLeft = 100 + "px";
+    if (box.current) {
+      box.current.style.marginLeft = 100 + "px";
+    }
   }, []);
 
   return (
